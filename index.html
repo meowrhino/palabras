@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://palabras.meowrhino.studio/">
+<meta name="description" content="Buscador de sinónimos y antónimos en castellano, català, english y français: por sentidos, con su definición, y por uso.">
+<title>palabras</title>
+<link rel="icon" href="favicon/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="stylesheet" href="css/estilo.css">
+<script>try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
+</head>
+<body>
+<header>
+  <h1><a href="#">palabras</a> <span><a id="hermana" href="https://rimas.meowrhino.studio/">rimas</a> <button id="tema" type="button" aria-label="claro u oscuro">◐</button></span></h1>
+  <nav id="idiomas" aria-label="idioma"></nav>
+  <form id="buscar" autocomplete="off">
+    <input id="palabra" type="search" placeholder="una palabra" autofocus spellcheck="false" aria-label="palabra">
+  </form>
+  <p id="analisis" aria-live="polite"></p>
+  <nav id="filtros" aria-label="filtrar por tipo de palabra"></nav>
+</header>
+<main>
+  <section id="sinonimos"><h2>sinónimos</h2><div></div></section>
+  <section id="antonimos"><h2>antónimos</h2><div></div></section>
+</main>
+<footer>
+  <p>Los sinónimos van por sentidos: cada grupo es una acepción, con su definición cuando la hay; los antónimos, aparte. Dentro de cada grupo, por orden de uso; las poco usadas, en gris. Una forma (corriendo, buenas) lleva a su palabra (correr, bueno). Tocar una palabra la busca; «rimas» abre la misma palabra en el buscador de rimas.</p>
+  <p>Castellano: <a href="https://es.wiktionary.org">Wikcionario</a> (CC BY-SA 4.0, sacado por <a href="https://kaikki.org">kaikki.org</a>), <a href="https://github.com/LibreOffice/dictionaries/tree/master/es">OpenThesaurus-es</a> (LGPL) y los antónimos del WordNet del <a href="https://adimen.si.ehu.es/web/MCR/">MCR</a> (CC BY 3.0). Català: <a href="https://github.com/softcatala/sinonims-cat">Diccionari de sinònims de Softcatalà</a> (CC BY 4.0), el WordNet del MCR i les formes de <a href="https://github.com/TALP-UPC/FreeLing">FreeLing</a>. English: <a href="https://en-word.net">Open English WordNet</a> (CC BY 4.0). Français : le <a href="https://fr.wiktionary.org">Wiktionnaire</a> (CC BY-SA 4.0, par kaikki.org). Orden de uso: <a href="https://github.com/hermitdave/FrequencyWords">OpenSubtitles</a>. Las listas que salen de aquí son CC BY-SA 4.0.</p>
+</footer>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

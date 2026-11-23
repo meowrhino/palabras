@@ -1,0 +1,8 @@
+// palabras en Cloudflare Workers (solo estáticos), con el dominio palabras.meowrhino.studio.
+// Publica Workers Builds en cada push a main; a mano, npx wrangler deploy
+{
+  "name": "palabras",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./" },
+  "routes": [{ "pattern": "palabras.meowrhino.studio", "custom_domain": true }]
+}
